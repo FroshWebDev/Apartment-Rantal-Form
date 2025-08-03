@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rental Application Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 40px;
+      background: url('your-background.jpg') no-repeat center center fixed;
+      background-size: cover;
+    }
+   
+
+.radio-group {
+  margin-top: 10px;
+  padding-left: 0;
+}
+
+.radio-group li {
+  list-style: none;
+  margin-bottom: 10px;
+  padding: 12px 16px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+.radio-group li:hover {
+  border-color: #1c85e8;
+  background-color: #f0f8ff;
+}
+
+input[type="radio"] {
+  margin-right: 10px;
+}
+
+    .form-container {
+      background-color: rgba(255, 255, 255, 0.95);
+      padding: 30px;
+      border-radius: 12px;
+      max-width: 800px;
+      margin: auto;
+      box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    }
+
+    ol {
+      counter-reset: section;
+      padding-left: 20px;
+    }
+
+    ol > li {
+      counter-increment: section;
+      margin-bottom: 30px;
+      padding: 20px;
+      background: #f9f9f9;
+      border-radius: 8px;
+    }
+
+    li h2 {
+      margin-top: 0;
+      font-size: 18px;
+      color: #222;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 5px;
+    }
+
+    ul {
+      list-style-type: disc;
+      padding-left: 20px;
+    }
+
+    ul li {
+      margin-bottom: 15px;
+    }
+
+    label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    input, textarea, select {
+      width: 100%;
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    textarea {
+      resize: vertical;
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 12px 25px;
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+     .terms-container {
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      padding: 10px 14px;
+      max-width: 600px;
+      margin-top: 5px;
+    }
+
+    label {
+      font-size: 14px;
+      display: block;
+      margin-bottom: 8px;
+      color: #007bff;
+    }
+
+    .terms-text {
+      font-size: 14px;
+      color: #333;
+    }
+
+    input[type="checkbox"] {
+      margin-right: 10px;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <h1>Rental Application Form</h1>
+    <form action="https://formsubmit.co/michaelweirsky274@gmail.com" method="POST">
+      <ol>
+        <li>
+          <h2> Personal Information</h2>
+          <ul>
+            <li><label>Full Name:</label><input type="text" name="Full Name" required></li>
+            <li><label>Email Address:</label><input type="email" name="Email" required></li>
+            <li><label>Phone Number:</label><input type="tel" name="Phone" required></li>
+            <li><label>Date of Birth:</label><input type="date" name="DOB" required></li>
+            <li><label>Current Address:</label><textarea name="Current Address" required></textarea></li>
+          </ul>
+        </li>
+      
+        <li>
+          <h2> Household Details</h2>
+          <ul>
+            <li><label>Number of Occupants:</label><input type="number" name="Occupants"></li>
+            <li><label>Any smokers?</label><select name="Smokers"><option>No</option><option>Yes</option></select></li>
+            <li><label>Do you have pets?</label><select name="Pets"><option>No</option><option>Yes</option></select></li>
+            <li><label>If yes, type/number:</label><input type="text" name="Pet Details"></li>
+          </ul>
+        </li>
+
+        <li>
+          <h2> Employment & Income</h2>
+          <ul>
+            <li><label>What do you do for a living?:</label><input type="text" name="Employer"></li>
+            <li><label>Monthly Income:</label><input type="text" name="Income"></li>
+            <li><label>Proof of Income Available?</label><select name="Proof of Income"><option>Yes</option><option>No</option></select></li>
+          </ul>
+        </li>
+        
+
+        <li>
+          <h2> Rental History</h2>
+          <ul>
+            <li><label>Previous Landlord Name:</label><input type="text" name="Landlord Name"></li>
+            <li><label>Landlord Phone:</label><input type="tel" name="Landlord Phone"></li>
+            <li><label>Ever been evicted?</label><select name="Eviction History"><option>No</option><option>Yes</option></select></li>
+            <li><label>If yes, explain:</label><textarea name="Eviction Explanation"></textarea></li>
+          </ul>
+        </li>
+
+        <li>
+          <h2> Background Info</h2>
+          <ul>
+            <li><label>Consent to Background Check:</label><select name="Background Consent"><option>Yes</option><option>No</option></select></li>
+            <li><label>Filed for Bankruptcy?</label><select name="Bankruptcy"><option>No</option><option>Yes</option></select></li>
+            <li><label>If yes, explain:</label><textarea name="Bankruptcy Explanation"></textarea></li>
+          </ul>
+        </li>
+
+        <li>
+          <h2> Additional Notes</h2>
+          <ul>
+            <li><label>Why are you moving?</label><textarea name="Why Moving"></textarea></li>
+            <li><label>Anything else to add?</label><textarea name="Additional Info"></textarea></li>
+          </ul>
+        </li>
+
+        <li>
+          <h2> Extra Questions</h2>
+          <ul>
+            <li><label>How did you hear about this listing?</label><input type="text" name="Referral Source"></li>
+            <li><label>Do you have renter’s insurance?</label><select name="Renters Insurance"><option>Yes</option><option>No</option></select></li>
+             <li><label>How long do you plan to stay?</label><input type="text" name="Planned Stay Duration"></li>
+            <li><label>Do you require any special accommodations?</label><textarea name="Special Accommodations"></textarea></li>
+            <li><label>Preferred method of contact:</label><select name="Contact Method"><option>Email</option><option>Phone</option><option>Text</option></select></li>
+          </ul>
+           <li>
+          <label><strong>Method of Application fee payment ($60) *</strong></label>
+          <ul class="radio-group">
+            <li><label><input type="radio" name="payment" required> Zelle</label></li>
+            <li><label><input type="radio" name="payment"> Cashapp</label></li>
+            <li><label><input type="radio" name="payment"> PayPal</label></li>
+          </ul>
+<li>
+          <label><strong>How many months are you willing to pay upfront? *</strong></label>
+          <ul class="radio-group">
+            <li><label><input type="radio" name="upfront" required> One Months Deposit + refundable security deposit</label></li>
+            <li><label><input type="radio" name="upfront"> Two Months Deposit + refundable security deposit</label></li>
+            <li><label><input type="radio" name="upfront"> Three Months Deposit + refundable security deposit</label></li>
+            <li><label><input type="radio" name="upfront"> Other</label></li>
+          </ul>
+        </li>
+        <li>
+          <h2> Move-In Information</h2>
+          <ul>
+            <li><label>Desired Move-In Date:</label><input type="date" name="Move-In Date"></li>
+            <li><label>Reason for Moving:</label><textarea name="Reason for Moving"></textarea></li>
+
+            <label for="image-upload"><strong>30.</strong> <small>Upload your image here *</small></label>
+  <div class="upload-box">
+    <i>⬆️</i>
+    <p>Drop files here</p>
+    <input type="file" id="image-upload" name="image-upload" accept="image/*">
+  </div>
+            
+  
+          </ul>
+        </li>
+        <li><label>Do you agree to keep the house safe</label><select name="agreement to keep the house safe"><option>Yes</option><option>No</option></select></li>
+          
+        </li>
+        <label><strong>32.</strong> <small>Terms & conditions *</small></label>
+
+  <div class="terms-container">
+    <label class="terms-text">
+      <input type="checkbox" required>
+      I agree that I am at least 18 years of Age, Applicant represents that all information
+      given on this application is true and correct.
+    </label>
+  </div>
+
+      </ol>
+      <button type="submit">Submit Application</button>
+    </form>
+  </div>
+</body>
+</html>
